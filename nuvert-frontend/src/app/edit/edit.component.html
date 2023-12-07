@@ -1,0 +1,40 @@
+<div class="login-root">
+  <div class="box-root flex-flex flex-direction--column" style="min-height: 100vh;flex-grow: 1;">
+    <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
+      <div class="formbg-outer">
+        <div class="formbg">
+          <div class="formbg-inner padding-horizontal--48">
+            <h1 class="padding-bottom--15">Edit Details</h1>
+            <form (submit)="onSubmit($event)" id="stripe-login">
+              <div class="field padding-bottom--24">
+                <label for="email">Name</label>
+                <input (change)="onInputChangeName($event)" id="compound-name" type="text" placeholder="Compound name"
+                  [value]="compoundDetail.name">
+              </div>
+              <div class="field padding-bottom--24">
+                <div class="grid--50-50">
+                  <label for="password">Image Url</label>
+                </div>
+                <input id="compound-img" (change)="onInputChangeUrl($event)" type="text-area"
+                  placeholder="Compound name" [value]="compoundDetail.imageUrl">
+              </div>
+              <div class="field padding-bottom--24">
+                <div class="grid--50-50">
+                  <label for="password">Description</label>
+                </div>
+                <input tid="compound-decp" (change)="onInputChangeDescription($event)" type="text"
+                  placeholder="Compound name" [value]="compoundDetail.description">
+              </div>
+
+
+              <button type="submit" class="field padding-bottom--24 btn">
+                Submit
+              </button>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

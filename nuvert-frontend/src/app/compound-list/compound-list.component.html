@@ -1,0 +1,28 @@
+<!-- your-component.component.html -->
+<div class="container">
+  <div *ngFor="let item of compoundList">
+    <!-- display card with image and name -->
+
+    <div class="card">
+      <div>
+        <img class="card_img" src="{{item.imageUrl}}" alt="image" />
+      </div>
+
+      <div class="card_bottom">
+        <p>{{item.name}}</p>
+        <div class="btn">
+          <a [routerLink]="['/detail',item.id]"><button class="button-81">Details</button></a>
+          <a [routerLink]="['/edit',item.id]"><button class="button-81">Edit</button></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div>
+    <button class="nextBtn" (click)="nextPage()"><img src="../../assets/right-arrow.png" alt=""></button>
+  </div>
+  <div>
+    <button class="prevBtn" (click)="previousPage()"><img src="../../assets/arrow.png" alt=""></button>
+  </div>
+
+</div>

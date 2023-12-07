@@ -1,0 +1,17 @@
+<div class="detail_container">
+  <div class="main_detail">
+    <div class="detail_card">
+      <div class="detail_img"><img src="{{compoundDetail.imageUrl}}" alt=""></div>
+      <div class="detail_content">
+        <h1>{{compoundDetail.name}}</h1>
+        <p>{{compoundDetail.description}}</p>
+        <div>
+          <button [routerLink]="['/edit',compoundDetail.id]" class="btn">
+            Edit
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

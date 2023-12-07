@@ -1,0 +1,64 @@
+nav {
+  height: 50px;
+  width: 500px;
+  margin: 30px auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border: 2px solid #521ff8;
+  font-family: 'Nunito Sans', sans-serif;
+  position: relative;
+}
+
+p {
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: -1px;
+  left: 15px;
+  font-family: 'Edu TAS Beginner', cursive;
+  cursor: pointer;
+}
+
+.links {
+  text-align: right;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 15px;
+  position: relative;
+  top: 15px;
+}
+
+a:hover {
+  color: #521ff8;
+}
+
+p:hover {
+  color: #521ff8;
+}
+
+.main__head {
+  margin-bottom: 20vh;
+}
+
+.btn {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  background-color: #521ff8;
+  border: 0 solid #e2e8f0;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Basier circle", -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  text-decoration: none #0d172a solid;
+  text-decoration-thickness: auto;
+}
